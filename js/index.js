@@ -42,28 +42,38 @@ let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
 
-let navigation = document.querySelectorAll('a');
-console.log(navigation)
+let navItem = document.querySelectorAll('nav a');
+console.log(navItem)
 
-let h1 = document.getElementsByTagName('h1');
-console.log(h1)
+let ctaText = document.querySelector('h1');
+ctaText.textContent = "DOM is Awesome";
+// console.log(h1)
 
-let ctaBtn = document.getElementsByClassName('cta-text');
-console.log(ctaBtn)
+let ctaBtn = document.querySelector('button');
+ctaBtn.textContent = siteContent['cta']['button'];
+// console.log(ctaBtn)
 
 let ctaImage = document.getElementById('cta-img');
-ctaImage.setAttribute('src', siteContent['cta']['img-src']);
-console.log(ctaImage);
+ctaImage.setAttribute('src', siteContent['cta']['img-src'])
+// console.log(ctaImage);
 
-let h4 = document.querySelectorAll('h4');
-console.log(h4)
+let middleImage = document.getElementById('middle-img')
+middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
-let mainContentText = document.querySelectorAll('p')
-console.log(mainContentText)
 
-let contactSection = document.getElementsByClassName('contact')
-console.log(contactSection)
+const contactH4 = document.getElementsByTagName("h4")[5]
+contactH4.textContent = siteContent["contact"]["contact-h4"]
 
-let footer = document.getElementsByClassName('footer');
+const contactAddress = document.getElementsByTagName("p")[5]
+contactAddress.textContent = siteContent["contact"]["address"]
+
+const contactPhone = document.getElementsByTagName("p")[6]
+contactPhone.textContent = siteContent["contact"]["phone"]
+
+
+const contactEmail = document.getElementsByTagName("p")[7]
+contactEmail.textContent = siteContent["contact"]["email"]
+
+
+let footer = document.querySelector('.footer');
 console.log(footer)
-
