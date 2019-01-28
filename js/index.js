@@ -45,17 +45,18 @@ logo.setAttribute('src', siteContent["nav"]["img-src"])
 let navigation = document.querySelectorAll('a');
 console.log(navigation)
 
-let ctaHeading = document.getElementsByTagName('h1');
-console.log(ctaHeading)
+let h1 = document.getElementsByTagName('h1');
+console.log(h1)
 
 let ctaBtn = document.getElementsByClassName('cta-text');
 console.log(ctaBtn)
 
 let ctaImage = document.getElementById('cta-img');
-console.log(ctaImage)
+ctaImage.setAttribute('src', siteContent['cta']['img-src']);
+console.log(ctaImage);
 
-let mainContentTitles = document.querySelectorAll('h4');
-console.log(mainContentTitles)
+let h4 = document.querySelectorAll('h4');
+console.log(h4)
 
 let mainContentText = document.querySelectorAll('p')
 console.log(mainContentText)
