@@ -41,9 +41,14 @@ const siteContent = {
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-// let navItem = document.querySelectorAll('nav a');
-// console.log(navItem)
+let navLinks = document.querySelectorAll("nav a");
+navLinks.forEach((link, i) => {
+  link.innerHTML = siteContent.nav[`nav-item-${i+1}`];
+})
 
+
+
+// --------------------------------------------------------------
 const ctaText = document.querySelector('.cta h1');
 ctaText.textContent = 'DOM Is Awesome';
 
@@ -83,7 +88,7 @@ mainCont5.textContent = siteContent['main-content']['vision-h4'];
 const mainCont5a = document.getElementsByTagName('p')[4];
 mainCont5a.textContent = siteContent['main-content']['vision-content']
 
-
+// ----------------------------------------------------------
 
 
 const middleImage = document.getElementById('middle-img')
