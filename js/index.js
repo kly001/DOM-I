@@ -41,10 +41,11 @@ const siteContent = {
 const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
-let navLinks = document.querySelectorAll("nav a");
+const navLinks = document.querySelectorAll("nav a");
 navLinks.forEach((link, i) => {
   link.innerHTML = siteContent.nav[`nav-item-${i+1}`];
 })
+
 
 
 
@@ -110,5 +111,5 @@ const contactEmail = document.getElementsByTagName('p')[7]
 contactEmail.textContent = siteContent['contact']['email']
 
 
-let footer = document.querySelector('footer');
+const footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright']
