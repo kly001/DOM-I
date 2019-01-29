@@ -113,3 +113,14 @@ contactEmail.textContent = siteContent['contact']['email']
 
 const footer = document.querySelector('footer');
 footer.textContent = siteContent['footer']['copyright']
+// ----------------------------------------------------------------
+
+//Creating a new Nav Items
+
+//Coloring Nav Items
+navLinks[0].style.color='green';
+navLinks[1].style.color='green';
+navLinks[2].style.color='green';
+navLinks[3].style.color='green';
+navLinks[4].style.color='green';
+navLinks[5].style.color='green';
