@@ -50,7 +50,7 @@ navLinks.forEach((link, i) => {
 
 // --------------------------------------------------------------
 const ctaText = document.querySelector('.cta h1');
-ctaText.textContent = 'DOM Is Awesome';
+ctaText.textContent = siteContent['cta']['h1'];
 
 
 const ctaBtn = document.querySelector('button');
