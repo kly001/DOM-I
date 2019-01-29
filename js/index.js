@@ -38,42 +38,72 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
-let logo = document.getElementById("logo-img");
+const logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
+// let navItem = document.querySelectorAll('nav a');
+// console.log(navItem)
 
-let navItem = document.querySelectorAll('nav a');
-console.log(navItem)
+const ctaText = document.querySelector('.cta h1');
+ctaText.textContent = 'DOM Is Awesome';
 
-let ctaText = document.querySelector('h1');
-ctaText.textContent = "DOM is Awesome";
-// console.log(h1)
 
-let ctaBtn = document.querySelector('button');
+const ctaBtn = document.querySelector('button');
 ctaBtn.textContent = siteContent['cta']['button'];
-// console.log(ctaBtn)
 
-let ctaImage = document.getElementById('cta-img');
+
+const ctaImage = document.getElementById('cta-img');
 ctaImage.setAttribute('src', siteContent['cta']['img-src'])
-// console.log(ctaImage);
 
-let middleImage = document.getElementById('middle-img')
+// ---------------------------------------------------------
+
+
+const mainCont1 = document.getElementsByTagName('h4')[0];
+mainCont1.textContent = siteContent['main-content']['features-h4'];
+const mainCont1a = document.getElementsByTagName('p')[0];
+mainCont1a.textContent = siteContent['main-content']['features-content']
+
+const mainCont2 = document.getElementsByTagName('h4')[1];
+mainCont2.textContent = siteContent['main-content']['about-h4'];
+const mainCont2a = document.getElementsByTagName('p')[1];
+mainCont2a.textContent = siteContent['main-content']['about-content']
+
+const mainCont3 = document.getElementsByTagName('h4')[2];
+mainCont3.textContent = siteContent['main-content']['services-h4'];
+const mainCont3a = document.getElementsByTagName('p')[2];
+mainCont3a.textContent = siteContent['main-content']['services-content']
+
+const mainCont4 = document.getElementsByTagName('h4')[3];
+mainCont4.textContent = siteContent['main-content']['product-h4'];
+const mainCont4a = document.getElementsByTagName('p')[3];
+mainCont4a.textContent = siteContent['main-content']['product-content']
+
+const mainCont5 = document.getElementsByTagName('h4')[4];
+mainCont5.textContent = siteContent['main-content']['vision-h4'];
+const mainCont5a = document.getElementsByTagName('p')[4];
+mainCont5a.textContent = siteContent['main-content']['vision-content']
+
+
+
+
+const middleImage = document.getElementById('middle-img')
 middleImage.setAttribute('src', siteContent['main-content']['middle-img-src'])
 
 
-const contactH4 = document.getElementsByTagName("h4")[5]
-contactH4.textContent = siteContent["contact"]["contact-h4"]
+// --------------------------------------------------------
+const contactH4 = document.getElementsByTagName('h4')[5]
+contactH4.textContent = siteContent['contact']['contact-h4']
 
-const contactAddress = document.getElementsByTagName("p")[5]
-contactAddress.textContent = siteContent["contact"]["address"]
+const contactAddress = document.getElementsByTagName('p')[5]
+contactAddress.textContent = siteContent['contact']['address']
 
-const contactPhone = document.getElementsByTagName("p")[6]
-contactPhone.textContent = siteContent["contact"]["phone"]
-
-
-const contactEmail = document.getElementsByTagName("p")[7]
-contactEmail.textContent = siteContent["contact"]["email"]
+const contactPhone = document.getElementsByTagName('p')[6]
+contactPhone.textContent = siteContent['contact']['phone']
 
 
-let footer = document.querySelector('.footer');
-console.log(footer)
+const contactEmail = document.getElementsByTagName('p')[7]
+contactEmail.textContent = siteContent['contact']['email']
+
+
+let footer = document.querySelector('footer');
+footer.textContent = siteContent['footer']['copyright']
